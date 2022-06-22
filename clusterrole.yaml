@@ -5,7 +5,6 @@ metadata:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
   name: ingress-clusterrole
-  resourceVersion: "2936"
 rules:
 - apiGroups:
   - ""
