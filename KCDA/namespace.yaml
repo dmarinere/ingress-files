@@ -5,7 +5,7 @@ metadata:
     app.kubernetes.io/instance: ingress-nginx
     app.kubernetes.io/name: ingress-nginx
   name: ingress
-----
+---
 apiVersion: v1
 automountServiceAccountToken: true
 kind: ServiceAccount
@@ -18,7 +18,7 @@ metadata:
     app.kubernetes.io/version: 1.2.1
   name: ingress-nginx
   namespace: ingress-nginx
-----
+---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
@@ -100,7 +100,7 @@ rules:
   verbs:
   - create
   - patch
----
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
