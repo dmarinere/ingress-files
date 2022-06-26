@@ -1,16 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-wear-watch
+  name: external-ingress
   annotations:
     nginx.ingress.kubernetes.io/backend-protocol: https
-    nginx.ingress.kubernetes.io/upstream-vhost: infantreg.azurewebsites.com
+    nginx.ingress.kubernetes.io/upstream-vhost: infantreg.azurewebsites.net
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
   - http:
       paths:
+      ingressClassName: nginx
       - path: /
         pathType: Prefix
         backend:
