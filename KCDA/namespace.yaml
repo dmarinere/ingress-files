@@ -100,7 +100,7 @@ rules:
   verbs:
   - create
   - patch
-
+---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
@@ -251,12 +251,6 @@ spec:
     app.kubernetes.io/instance: ingress-nginx
     app.kubernetes.io/name: ingress-nginx
   type: LoadBalancer
----
-
-
-
-
-
 ---
 apiVersion: apps/v1
 kind: Deployment
