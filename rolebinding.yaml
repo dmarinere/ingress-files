@@ -5,7 +5,7 @@ metadata:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
   name: ingress-role-binding
-  namespace: ingress-space
+  namespace: nginx-ingress
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
