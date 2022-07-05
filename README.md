@@ -4,4 +4,4 @@ This repository contains file i used when given a talk on ingress controller
 
 
 
-Please read this article for a step by step guide on how to do this. 
+Please read this article(I will link this when it is ready.) for a step by step guide on how to do this. 
