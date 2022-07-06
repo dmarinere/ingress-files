@@ -20,7 +20,7 @@ spec:
           args:
             - /nginx-ingress-controller
             - --configmap=$(POD_NAMESPACE)/ingress-nginx-config
-        env:
+          env:
             - name: POD_NAME
               valueFrom:
                 fieldRef:
